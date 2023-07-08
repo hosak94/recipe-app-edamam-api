@@ -30,33 +30,31 @@ const RecipeDetail = () => {
 
   return (
     <div className="w-full h-[100vh] ">
-      <div className="relative w-full h-full">
+      <div className="relative w-full h-[100vh]">
         <img
           src={Banner}
           alt="Recipes"
-          className="w-full h-full object-cover"
+          className="w-full  h-[100vh] object-cover"
         />
       </div>
       <div
-        className="absolute w-full h-full 
+        className="absolute w-full  h-[100vh]
       bg-gradient-to-t from-black to-transparent
       top-0 z-8 flex flex-col items-center
       justify-center pt-40 2xl:pt-20 px-4 "
       >
         <div>
           <div
-            className="w-full h-full sm:w-[200px] 
-          md:w-[400px] lg:w-[400px] 
+            className="w-full 
            border border-gray-500 rounded-md
-           bg-gradient-to-b from-black to-transparent"
+           bg-gradient-to-b from-black to-transparent "
           >
-            <div className="flex flex-col justify-center gap-4 py-4">
+            <div className="flex flex-col justify-center gap-4 py-4 ">
               <div className="flex justify-center">
                 <img
                   src={recipe.image}
                   alt="Resim"
-                  className="rounded-lg sm:w-[200px] sm:h-[150px] 
-          md:w-[200px] md:h-[150px] lg:w-[200px] lg:h-[150px]"
+                  className="rounded-lg w-[200px] h-[150px] md:w-[200px] md:h[150px]"
                 />
               </div>
               <div className="flex justify-center text-white">
@@ -69,7 +67,9 @@ const RecipeDetail = () => {
               <div>
                 <ol className="list-disc md:w-[400px] sm:w-[200px] px-10 text-white">
                   {recipe.ingredients.map((ingredient, index) => (
-                    <li key={index}>{ingredient.text}</li>
+                    <li className="text-xs md:text-base" key={index}>
+                      {ingredient.text}
+                    </li>
                   ))}
                 </ol>
               </div>
