@@ -54,7 +54,7 @@ const RecipeDetail = () => {
                 <img
                   src={recipe.image}
                   alt="Resim"
-                  className="rounded-lg w-[200px] h-[150px] md:w-[200px] md:h[150px]"
+                  className="rounded-lg w-[300px] h-[200px] md:w-[300px] md:h[200px]"
                 />
               </div>
               <div className="flex justify-center text-white">
@@ -67,7 +67,7 @@ const RecipeDetail = () => {
               <div>
                 <ol className="list-disc md:w-[400px] sm:w-[200px] px-10 text-white">
                   {recipe.ingredients.map((ingredient, index) => (
-                    <li className="text-xs md:text-base" key={index}>
+                    <li className="text-sm md:text-base" key={index}>
                       {ingredient.text}
                     </li>
                   ))}
