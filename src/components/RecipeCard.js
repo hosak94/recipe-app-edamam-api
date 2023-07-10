@@ -16,6 +16,8 @@ const RecipeCard = ({ recipe }) => {
   const handleMouseLeave = () => {
     setIsHovered(false);
   };
+  const formattedMealType =
+    mealType[0].charAt(0).toUpperCase() + mealType[0].slice(1);
 
   return (
     <Link
@@ -46,7 +48,7 @@ const RecipeCard = ({ recipe }) => {
               {cuisineType}
             </span>
             <span className="px-2 py-1 text-[12px] capitalize bg-[#0c452243] shadow-xl rounded-full mr-3 text-green-500">
-              {mealType}
+              {formattedMealType}
             </span>
           </div>
         </div>
