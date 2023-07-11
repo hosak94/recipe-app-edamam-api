@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../images/logo.jpeg";
+
 import { HiMenuAlt3 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
 import Button from "./Button";
@@ -25,7 +25,7 @@ const Navbar = () => {
           className="flex items-center justify-center text-white text-lg cursor-pointer gap-2 w-[250px]"
         >
           <img
-            src={Logo}
+            src={process.env.PUBLIC_URL + "/project-images/logo.jpeg"}
             alt="Logo"
             className="hidden md:block w-8 h-8 
           lg:w-14 lg:h-14 rounded-full"

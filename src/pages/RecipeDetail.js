@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { fetchRecipe } from "../utils";
-import Banner from "../images/banner3.jpeg";
 
 const RecipeDetail = () => {
   const [recipe, setRecipe] = useState({});
@@ -32,7 +31,7 @@ const RecipeDetail = () => {
     <div className="w-full h-[100vh] ">
       <div className="relative w-full h-[100vh]">
         <img
-          src={Banner}
+          src={process.env.PUBLIC_URL + "/project-images/banner3.jpeg"}
           alt="Recipes"
           className="w-full  h-[100vh] object-cover"
         />

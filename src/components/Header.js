@@ -1,12 +1,11 @@
 import React from "react";
-import Banner from "../images/banner3.jpeg";
 
 const Header = ({ image }) => {
   return (
     <div className="w-full h-[100vh]">
       <div className="relative w-full h-full">
         <img
-          src={Banner}
+          src={process.env.PUBLIC_URL + "/project-images/banner3.jpeg"}
           alt="Recipes"
           className="w-full h-full object-cover"
         />
